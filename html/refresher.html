@@ -6,16 +6,28 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
+      .c{
+        height: 90vh;
+        position: relative;
+      }
      .gridC{
       display: grid;
       
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 10px;
       margin: 10px;
-      height: 80vh;
+      
      }
+     .para{
+       background-color: aqua;
+     }
+   
      .image{
-       text-align: end;
+       
+       position: absolute;
+       bottom: 0;
+       right: 0;
+      
      }
      @media screen and (max-width: 600px) {
       img{
@@ -28,20 +40,23 @@
   
   </head>
   <body>
+   <div class="c">
     <div class="gridC">
-      <div class="para1">
+      <div class="para1 para">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea, labore corrupti pariatur modi officiis illum a tempora iure dolorum qui! Tempore incidunt odio dolor fugiat omnis quas unde architecto!
       </div>
-      <div class="para2">
+      <div class="para2 para">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ex asperiores commodi iure tempora repudiandae, id adipisci non sint, accusamus cupiditate beatae eum repellendus nihil similique! Rerum, dolores praesentium consectetur repellendus cupiditate sapiente sint ipsum provident itaque dolore accusamus. Neque voluptas, perspiciatis mollitia velit, quasi fugiat blanditiis, numquam consequuntur ea perferendis ex eveniet? Animi alias aperiam minus voluptate, temporibus repellat?
       </div>
-      <div class="para3">
+      <div class="para3 para">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea, labore corrupti pariatur modi officiis illum a tempora iure dolorum qui! Tempore incidunt odio dolor fugiat omnis quas unde architecto!
       </div>
       
     </div>
    <div class="image">
     <img src="./what.jpg" alt="" width="50px" height="50px">
+   </div>
+
    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
